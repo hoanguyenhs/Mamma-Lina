@@ -1,0 +1,42 @@
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+
+	<display-name>MammaLina</display-name>
+	<servlet>
+		<servlet-name>ContactServlet</servlet-name>
+		<display-name>ContactServlet</display-name>
+		<description></description>
+		<servlet-class>com.hoanguyenhs.mammalina.ContactServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>WelcomeServlet</servlet-name>
+		<display-name>WelcomeServlet</display-name>
+		<description></description>
+		<servlet-class>com.hoanguyenhs.mammalina.WelcomeServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>MenuServlet</display-name>
+		<servlet-name>MenuServlet</servlet-name>
+		<servlet-class>com.hoanguyenhs.mammalina.MenuServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ContactServlet</servlet-name>
+		<url-pattern>/ContactServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>WelcomeServlet</servlet-name>
+		<url-pattern>/WelcomeServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>MenuServlet</servlet-name>
+		<url-pattern>/MenuServlet</url-pattern>
+	</servlet-mapping>
+
+	<session-config>
+		<session-timeout>30</session-timeout>
+	</session-config>
+
+</web-app>
